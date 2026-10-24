@@ -85,7 +85,7 @@
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
 'use strict';
-const API_URL = "REMPLACER_PAR_URL_APPS_SCRIPT_EXEC";
+const API_URL = "https://script.google.com/macros/s/AKfycbzlAsHAX_VrNEaNhVbIpF99OeoA2qT5EU7_qZdqUuIQVLGu-X6-4OPuxPbQz4sHQY_wKA/exec";
 const $ = (id) => document.getElementById(id);
 const state = {token:'', user:null, month:new Date().toISOString().slice(0,7), employeeId:'all', data:null, page:'home', entryStatus:'worked', editing:null, sundayTouched:false, lastLoad:0, employees:[]};
 const money = n => new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR',minimumFractionDigits:Number(n||0)%1===0?0:2,maximumFractionDigits:2}).format(Number(n)||0);
